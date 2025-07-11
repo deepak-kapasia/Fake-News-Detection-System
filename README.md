@@ -81,9 +81,3 @@ Training Project under **Lovely Professional University**
 Faculty Guide: **Mr. Nishant Agnihotri**
 
 ---
-
-## 📄 License
-
-This project is licensed for educational use only. Do not use for actual news verification purposes.
-
-```
