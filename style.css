@@ -1,0 +1,239 @@
+body {
+    background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%),
+        url('https://torange.biz/photo/49678/overlay-grid-computer-modern-techno-texture.jpg') center/cover no-repeat fixed;
+    background-blend-mode: overlay;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    margin: 48px auto;
+    background: rgba(255,255,255,0.98);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(67,198,172,0.18), 0 2px 12px rgba(30,30,60,0.10);
+    padding: 40px 36px 32px 36px;
+    border: 2.5px solid #1976d2;
+    position: relative;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+h1 {
+    background: linear-gradient(90deg, #1976d2 0%, #8e24aa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 8px #ffe08244;
+    font-size: 2.1rem;
+}
+
+#theme-switcher {
+    background: linear-gradient(90deg, #fffbe7 0%, #bdbdbd 100%);
+    color: #222;
+    border: 1.5px solid #1976d2;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 1px 6px #1976d233;
+    transition: background 0.2s, color 0.2s;
+}
+#theme-switcher:hover {
+    background: linear-gradient(90deg, #1976d2 0%, #8e24aa 100%);
+    color: #fff;
+}
+
+form {
+    margin-bottom: 28px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1976d2;
+    font-weight: 500;
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #bdbdbd;
+    border-radius: 7px;
+    font-size: 1rem;
+    margin-bottom: 14px;
+    resize: vertical;
+    background: #fffbe7;
+    transition: border 0.2s;
+}
+
+textarea:focus, input[type="text"]:focus {
+    border: 1.5px solid #1976d2;
+    outline: none;
+}
+
+.primary-btn {
+    background: linear-gradient(90deg, #1976d2 0%, #8e24aa 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #1976d233;
+    transition: background 0.2s, transform 0.1s;
+}
+.primary-btn:hover {
+    background: linear-gradient(90deg, #8e24aa 0%, #1976d2 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.card-block {
+    margin-bottom: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #1976d222;
+    padding: 18px 20px 14px 20px;
+    background: #f5f7fa;
+    border: 1.5px solid #bdbdbd;
+}
+
+#result-section.card-block {
+    background: #f3fbe7;
+    border: 1.5px solid #aed581;
+}
+#result-section.card-block h2 {
+    color: #388e3c;
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+#result {
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+    border-radius: 8px;
+    min-height: 32px;
+    margin-top: 0;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+#result.fake {
+    color: #c62828;
+}
+#result.real {
+    color: #2e7d32;
+}
+
+#found-keywords-section.card-block {
+    background: #fff8e1;
+    border: 1.5px solid #ffb347;
+}
+#found-keywords-section.card-block h2 {
+    color: #ff9800;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+#found-keywords-count {
+    font-size: 1.05rem;
+    color: #1976d2;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+#found-keywords {
+    min-height: 24px;
+    font-size: 1.05rem;
+    color: #c62828;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+#found-keywords .keyword {
+    background: linear-gradient(90deg, #ffdde1 0%, #ffb347 100%);
+    color: #c62828;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-weight: 500;
+    box-shadow: 0 1px 4px #ffb34733;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 98vw;
+        padding: 18px 4vw;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Dark Theme */
+body.dark {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%),
+        url('https://torange.biz/photo/49678/overlay-grid-computer-modern-techno-texture.jpg') center/cover no-repeat fixed;
+    background-blend-mode: overlay;
+}
+body.dark .container {
+    background: rgba(30,32,40,0.98);
+    border-color: #8e24aa;
+}
+body.dark .header-row h1 {
+    text-shadow: 1px 2px 8px #8e24aa44;
+}
+body.dark label {
+    color: #8e24aa;
+}
+body.dark textarea, body.dark input[type="text"] {
+    background: #232526;
+    color: #fff;
+    border-color: #8e24aa;
+}
+body.dark textarea:focus, body.dark input[type="text"]:focus {
+    border-color: #1976d2;
+}
+body.dark .primary-btn {
+    background: linear-gradient(90deg, #8e24aa 0%, #1976d2 100%);
+}
+body.dark .primary-btn:hover {
+    background: linear-gradient(90deg, #1976d2 0%, #8e24aa 100%);
+}
+body.dark .card-block {
+    background: #232526;
+    border-color: #8e24aa;
+}
+body.dark #result-section.card-block {
+    background: #2e7d32;
+    border-color: #388e3c;
+}
+body.dark #result-section.card-block h2 {
+    color: #fffbe7;
+}
+body.dark #result {
+    color: #fffbe7;
+}
+body.dark #found-keywords-section.card-block {
+    background: #3e2723;
+    border-color: #ffb347;
+}
+body.dark #found-keywords-section.card-block h2 {
+    color: #ffb347;
+}
+body.dark #found-keywords-count {
+    color: #ffb347;
+}
+body.dark #found-keywords .keyword {
+    background: linear-gradient(90deg, #8e24aa 0%, #ffb347 100%);
+    color: #fffbe7;
+} 
