@@ -1,5 +1,5 @@
 
-```markdown
+
 # 📰 Fake News Detection System
 
 A lightweight, browser-based tool that detects likely fake news content using keyword-based analysis powered by core data structures like arrays and hash tables.
@@ -26,7 +26,7 @@ This project is a **rule-based fake news detector** that scans news headlines or
 
 ## 📂 Project Structure
 
-```
+
 
 📁 Fake-News-Detection-System
 │
@@ -34,9 +34,8 @@ This project is a **rule-based fake news detector** that scans news headlines or
 ├── style.css           # UI styling (light/dark mode)
 └── script.js           # Core logic for detection
 
-````
 
----
+
 
 ## 🛠️ Technologies Used
 
@@ -53,9 +52,8 @@ This project is a **rule-based fake news detector** that scans news headlines or
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/fake-news-detection-system.git
+   git clone https://github.com/deepak-kapasia/fake-news-detection-system.git
    cd fake-news-detection-system
-````
 
 2. Open `index.html` in your browser.
 
